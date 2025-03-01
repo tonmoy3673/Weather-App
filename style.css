@@ -19,9 +19,9 @@
   margin-bottom: 7px;
 }
 .author {
-  font-size: small;
+  font-size: 1rem;
   font-style: italic;
-  color: #f3de26;
+  color: #eb6e4b;
 }
 #input-container {
   display: flex;
@@ -52,12 +52,7 @@
   cursor: pointer;
 }
 #search-btn:hover {
-  background: linear-gradient(
-    270.53deg,
-    #38a1bb 84.87%,
-    #604dbc 08.72%,
-    #38a1bb 77.9%
-  );
+  background-color: #eb6e4b;
 }
 
 .btn-img {
