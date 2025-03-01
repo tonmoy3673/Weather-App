@@ -24,7 +24,7 @@
             id="input-field"
           />
           <!-- ========== Search Button ========= -->
-          <button id="search-btn">
+          <button id="search-btn" onclick="searchCityName()">
             <img class="btn-img" src="./images/search.png" />
           </button>
         </div>
@@ -37,7 +37,7 @@
           </div>
           <!-- =========== Weather Text ============= -->
           <div id="weather-text-container">
-            <h2 id="weather-text">32 <span></span>°C</h2>
+            <h2 id="weather-text"><span id="temp">32</span> °C</h2>
             <h4 class="bracket">(<span id="weather-type">Sunny</span>)</h4>
           </div>
           <!-- ============= City Name ============ -->
