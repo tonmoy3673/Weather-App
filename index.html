@@ -7,13 +7,30 @@
     <title>Weather App</title>
   </head>
   <body>
+    <!-- ============== Main Part =============== -->
     <main class="main-container">
+      <!-- ============= Title Section ========= -->
       <section class="container">
-        <nav class="title">
-          <h1 class="title-name">Weather App</h1>
-          <marquee direction="right">Developed By Tonmoy</marquee>
+        <nav>
+          <h1 class="title">Weather App</h1>
+          <marquee class="author" direction="left">Developed By Tonmoy</marquee>
         </nav>
+        <!-- ================= Input Section  ========== -->
+        <div id="input-container">
+          <!-- ========== Input field =========== -->
+          <input
+            type="text"
+            placeholder="Type City Name Here"
+            id="input-field"
+          />
+          <!-- ========== Search Button ========= -->
+          <button>
+            <img id="btn-img" src="./images/search.png" />
+          </button>
+        </div>
       </section>
+
+      <!-- ================ End of Main Part ============== -->
     </main>
     <script src="app.js"></script>
   </body>
