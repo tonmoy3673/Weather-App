@@ -15,6 +15,7 @@ const checkWeather = async (cityName) => {
   const errorText = document.getElementById('error');
   const weatherImage = document.getElementById('weather-img');
   let date = new Date (dt * 1000);
+  console.log(data);
   
 // ======= Error Handling ===========//
 if (!res.ok) {
@@ -24,7 +25,7 @@ if (!res.ok) {
    return;
 }
 errorText.style.display = 'none'; // Hide the error message
-document.getElementById('weather-details').style.display = 'block';
+document.getElementById('weather-details').style.display = 'flex';
 
 // ========== weather image set up ==========//
 if (weather[0]?.main === 'Clear') {
@@ -88,4 +89,8 @@ document.getElementById('wind').innerText=wind?.speed ? wind?.speed : "Not Found
     console.log(inputField);
     // ========== Call checkWeather Function ========//
     checkWeather(inputField)
+    
  }
+
+//  ============ Default city =========//
+ checkWeather('chuadanga')

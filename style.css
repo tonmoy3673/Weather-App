@@ -21,8 +21,13 @@
 }
 .author {
   font-size: 1rem;
+  color: #ebfffc;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-top: 4px;
+  padding: 3px 0;
   font-style: italic;
-  color: #eb6e4b;
+  text-align: center;
 }
 #input-container {
   display: flex;
@@ -51,18 +56,28 @@
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#search-btn:focus {
+  outline: none;
 }
 #search-btn:hover {
-  background-color: #eb6e4b;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
 .btn-img {
   width: 18px;
 }
-#weather-details {
+
+.weather-details-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #weather-img {
   width: 240px;
@@ -71,9 +86,10 @@
 #weather-text-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 15px;
   margin-bottom: 10px;
+  text-align: center;
 }
 #weather-text {
   font-size: 2.5rem;
@@ -86,6 +102,7 @@
 #weather-type {
   font-size: 1.6rem;
   text-align: center;
+  justify-content: center;
   color: #ebfffc;
 }
 .bracket {
@@ -136,4 +153,78 @@
   padding: 30px 0;
   display: none;
   text-align: center;
+}
+
+/* ============ Responsive Design =========== */
+@media screen and (max-width: 400px) {
+  .main-container {
+    width: 100%;
+  }
+  .container {
+    width: 95%;
+    max-width: auto;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    margin: 7px auto;
+    padding: 10px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .author {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  #input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #weather-img {
+    width: 180px;
+    height: 180px;
+  }
+  #weather-text {
+    font-size: 2rem;
+  }
+
+  #temp {
+    font-size: 2.7rem;
+  }
+
+  #weather-type {
+    font-size: 1.4rem;
+  }
+
+  #city-name {
+    font-size: 1.6rem;
+  }
+
+  #date-time {
+    font-size: 1rem;
+  }
+  .condition-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .condition-img {
+    width: 50px;
+  }
+
+  .condition {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .condition-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 10px auto;
+  }
 }
