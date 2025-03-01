@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ========= Google Fonts ======= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
   </head>
@@ -29,6 +36,11 @@
           </button>
         </div>
 
+        <!-- ============== Error Text ========== -->
+        <div>
+          <h4 id="error"></h4>
+        </div>
+
         <!-- =========== Weather Details ========= -->
         <section id="weather-details">
           <div class="weather-img-container">
@@ -52,7 +64,7 @@
               <img class="condition-img" src="/images/humidity.png" />
               <!-- =========== Humidity Text =========== -->
               <div>
-                <h4 class="condition" id="humidity">90 <span>%</span></h4>
+                <h4 class="condition"><span id="humidity">90 </span> %</h4>
                 <p class="condition-text">Humidity</p>
               </div>
             </div>
@@ -62,7 +74,7 @@
               <img class="condition-img" src="/images/wind.png" />
               <!-- =========== Wind Text =========== -->
               <div>
-                <h4 class="condition" id="wind">2.68 <span>km/h</span></h4>
+                <h4 class="condition"><span id="wind">2.68</span> km/h</h4>
                 <p class="condition-text">Wind Speed</p>
               </div>
             </div>
