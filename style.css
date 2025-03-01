@@ -8,7 +8,7 @@
   max-width: 470px;
   background: linear-gradient(135deg, #00feba, #5b548a);
   margin: 50px auto;
-  padding: 20px 10px;
+  padding: 25px 10px;
   border-radius: 15px;
 }
 .title {
@@ -72,12 +72,60 @@
   width: 240px;
   height: 240px;
 }
-
+#weather-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+#weather-text {
+  font-size: 2.8rem;
+  color: #ebfffc;
+}
+#weather-type {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ebfffc;
+}
+.bracket {
+  font-size: 2rem;
+  color: #ebfffc;
+}
+#city-name {
+  font-size: 1.8rem;
+  color: #ebfffc;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+#date-time {
+  font-size: 1.3rem;
+  color: #ebfffc;
+}
 #Weather-type-Container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px 0;
 }
 .condition-container {
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+.condition-img {
+  width: 35px;
+}
+.condition {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ebfffc;
+}
+.condition-text {
+  font-weight: 400;
+  color: #f2f2f2;
 }
