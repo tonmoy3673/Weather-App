@@ -1,4 +1,4 @@
-console.log("connected");
+
 // ========= API Key =============//
 // Const Main URL= https://api.openweathermap.org/data/2.5/weather?q=germany&appid=58e2668dce7ceb8bbb5f2f6714cb2de7&units=metric
 const apiKey = "58e2668dce7ceb8bbb5f2f6714cb2de7";
@@ -15,7 +15,7 @@ const checkWeather = async (cityName) => {
   const errorText = document.getElementById('error');
   const weatherImage = document.getElementById('weather-img');
   let date = new Date (dt * 1000);
-  console.log(data);
+  
   
 // ======= Error Handling ===========//
 if (!res.ok) {
@@ -86,7 +86,6 @@ document.getElementById('wind').innerText=wind?.speed ? wind?.speed : "Not Found
     const errorText = document.getElementById('error');
   errorText.style.display = 'none'
 
-    console.log(inputField);
     // ========== Call checkWeather Function ========//
     checkWeather(inputField)
     
