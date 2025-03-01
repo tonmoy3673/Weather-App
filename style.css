@@ -20,7 +20,7 @@
   font-family: "Raleway", sans-serif;
 }
 .author {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #ebfffc;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -226,5 +226,8 @@
     max-width: 600px;
     padding: 20px;
     margin: 10px auto;
+  }
+  .author {
+    font-size: 0.7rem;
   }
 }
