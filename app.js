@@ -14,8 +14,9 @@ const checkWeather = async (cityName) => {
   const {weather,main,wind,name,dt} = data;
   const errorText = document.getElementById('error');
   const weatherImage = document.getElementById('weather-img');
-  let date = new Date (dt * 1000);
-  
+  let date = new Date((dt + timezone) * 1000);
+  let localDate = new Date(date.toLocaleString("en-US", { timeZone: data.timezone }));
+
   
 // ======= Error Handling ===========//
 if (!res.ok) {
@@ -55,7 +56,7 @@ document.getElementById('weather-type').innerText=weather[0]?.main ? weather[0]?
 // ========= display city name =========//
  document.getElementById('city-name').innerText= name ? name : 'Not Found!'
 //  ========== display date ============//
-document.getElementById('date-time').innerText = date.toLocaleString('en-GB', { 
+document.getElementById('date-time').innerText = localDate.toLocaleString('en-GB', { 
     weekday: 'long', 
     year: 'numeric', 
     month: 'long', 
